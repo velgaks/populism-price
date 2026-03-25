@@ -15,9 +15,9 @@ const DATA = {
       description: "Одноразова доплата для ~13 млн пенсіонерів та отримувачів соцдопомоги (квітень 2026)",
       annualCostUAH: 19500000000,
       year: "2026",
-      sourceLabel: "КМУ, 18.03.2026; 13 млн отримувачів × 1500 грн ≈ 19.5 млрд",
-      sourceUrl: "https://www.kmu.gov.ua/news/vrazlyvi-katehorii-ukraintsiv-otrymaiut-odnorazovu-derzhavnu-doplatu-u-kvitni-2026-roku-rishennia-uriadu",
-      notes: "Разова виплата. Мінсоцполітики заявляє про 'внутрішню економію' як джерело."
+      sourceLabel: "Постанова КМУ №341 від 18.03.2026; ~13 млн отримувачів × 1500 грн",
+      sourceUrl: "https://zakon.rada.gov.ua/laws/show/341-2026-%D0%BF",
+      notes: "Разова виплата. Фінансується з перерозподілу існуючих бюджетних програм. Сума розрахункова (~13 млн × 1500 грн)."
     },
     {
       id: "uz-dotatsia",
@@ -25,9 +25,9 @@ const DATA = {
       description: "Компенсація різниці між собівартістю та ціною пасажирських квитків",
       annualCostUAH: 16000000000,
       year: "2026",
-      sourceLabel: "КМУ, розпорядження березень 2026; 16 млрд з резервного фонду",
-      sourceUrl: "https://www.finclub.net/news/kabmin-vydilyv-16-mlrd-hrn-z-derzhbiudzhetu-na-dotatsii-dlia-ukrzaliznytsi.html",
-      notes: "Квиток до Херсона ~200 грн, собівартість — у 4 рази більша."
+      sourceLabel: "Розпорядження КМУ №196-р від 02.03.2026; 16 млрд з резервного фонду",
+      sourceUrl: "https://www.kmu.gov.ua/npas/pro-vydilennia-koshtiv-z-rezervnoho-fondu-derzhavnoho-biudzhetu-196-020326",
+      notes: "Компенсація різниці між собівартістю та ціною пасажирських квитків. Виділено з резервного фонду."
     },
     {
       id: "epidtrymka",
@@ -55,29 +55,29 @@ const DATA = {
       description: "Програма безкоштовних медоглядів для населення",
       annualCostUAH: 10000000000,
       year: "2025-2026",
-      sourceLabel: "~оцінка; Українська правда, 22.03.2026",
-      sourceUrl: "https://www.pravda.com.ua/articles/2026/03/22/8026307/",
-      notes: "Точна бюджетна цифра не опублікована окремо. ~10 млрд — оцінка з медіа."
+      sourceLabel: "Держбюджет-2026: 10 млрд грн у складі ПМГ (НСЗУ); МОЗ",
+      sourceUrl: "https://moz.gov.ua/uk/derzhavnij-byudzhet-na-2026-rik-prijnyato-parlamentom-na-sferu-ohoroni-zdorov-ya-peredbacheno-258-6-mlrd",
+      notes: "10 млрд у складі Програми медичних гарантій (191.6 млрд). Для громадян від 40 років."
     },
     {
       id: "nats-keshbek",
       name: "Національний кешбек",
       description: "Повернення 10% вартості українських товарів на спеціальну картку",
-      annualCostUAH: 6000000000,
-      year: "2025-2026",
-      sourceLabel: "УНІАН, серпень 2024: план 6 млрд на 2025",
-      sourceUrl: "https://www.unian.ua/economics/finance/nacionalniy-keshbek-navishcho-derzhavi-znati-pro-vashi-pokupki-12740829.html",
-      notes: "7.5 млн учасників."
+      annualCostUAH: 5600000000,
+      year: "2026",
+      sourceLabel: "КМУ: понад 5.6 млрд грн на підтримку виробників у 2026; резервний фонд",
+      sourceUrl: "https://www.kmu.gov.ua/news/uriad-spriamuvav-ponad-56-mlrd-hrn-na-pidtrymku-ukrainskykh-vyrobnykiv-u-2026-rotsi",
+      notes: "Фінансується з резервного фонду. 7.5 млн учасників. Програма завершується у травні 2026."
     },
     {
       id: "keshbek-palne",
       name: "Кешбек на пальне",
       description: "Повернення 5-15% вартості заправки. Діє 20.03 — 01.05.2026",
-      annualCostUAH: 6000000000,
+      annualCostUAH: 4000000000,
       year: "2026",
-      sourceLabel: "ЕП, 18.03.2026: 2.14 млрд (виділено) + ~4 млрд (планують)",
+      sourceLabel: "Постанова КМУ №342 від 18.03.2026; ~4 млрд з резервного фонду (оцінка)",
       sourceUrl: "https://epravda.com.ua/power/keshbek-na-palne-yaki-umovi-programi-ta-zvidki-groshi-819377/",
-      notes: "Не закладений у бюджет — фінансується з резервного фонду. Субсидує імпортне пальне."
+      notes: "Не закладений у бюджет — фінансується з резервного фонду. Підтверджено виділення 2.14 млрд, очікується ще ~2 млрд."
     }
   ],
   equipment: [
@@ -93,8 +93,8 @@ const DATA = {
     defenseGapUAH: 400000000000,
     defenseGapLabel: "~400 млрд грн — діра по військових видатках",
     defenseGapSourceUrl: "https://lb.ua/economics/2026/03/12/726861_zastupnik_golovi_podatkovogo.html",
-    totalProgramsCostUAH: 86300000000,
-    totalProgramsCostLabel: "~86.3 млрд грн — сума всіх програм у цьому калькуляторі"
+    totalProgramsCostUAH: 83900000000,
+    totalProgramsCostLabel: "~83.9 млрд грн — сума всіх програм у цьому калькуляторі"
   },
   meta: {
     lastUpdated: "2026-03-25",
