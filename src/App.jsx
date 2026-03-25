@@ -607,6 +607,21 @@ export default function App() {
         <div className="h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
       </div>
 
+      {/* Disclaimer */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 mb-8">
+        <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl px-5 py-4 text-xs text-gray-400 font-body leading-relaxed space-y-2">
+          <p>
+            <span className="text-gray-300 font-semibold">Що ми вважаємо популізмом?</span>{' '}
+            Популістська фіскальна політика — це державні видатки, які оптимізують короткострокову політичну підтримку, а не довгострокову ефективність. Класичне визначення (
+            <a href="https://press.uchicago.edu/ucp/books/book/chicago/M/bo3684436.html" target="_blank" rel="noopener noreferrer" className="text-gold-500/60 hover:text-gold-400 underline decoration-dotted underline-offset-2 transition-colors">Dornbusch & Edwards, 1991</a>
+            ): короткозорі фіскальні та соціальні політики, що апелюють до широких мас, ведуть до дефіцитів і макроекономічної нестабільності.
+          </p>
+          <p className="text-gray-500">
+            Ми не стверджуємо, що кожна програма в калькуляторі — «погана». Деякі мають реальний соціальний ефект. Але ми оцінюємо, наскільки їхній дизайн відповідає ознакам популістської політики — і яка їхня альтернативна вартість у контексті війни.
+          </p>
+        </div>
+      </div>
+
       {/* Program selector */}
       <ProgramSelector selected={selectedId} onSelect={setSelectedId} />
 
