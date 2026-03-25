@@ -17,7 +17,9 @@ const DATA = {
       year: "2026",
       sourceLabel: "Постанова КМУ №341 від 18.03.2026; ~13 млн отримувачів × 1500 грн",
       sourceUrl: "https://zakon.rada.gov.ua/laws/show/341-2026-%D0%BF",
-      notes: "Разова виплата. Фінансується з перерозподілу існуючих бюджетних програм. Сума розрахункова (~13 млн × 1500 грн)."
+      notes: "Разова виплата. Фінансується з перерозподілу існуючих бюджетних програм. Сума розрахункова (~13 млн × 1500 грн).",
+      populismScore: 6.5,
+      populismFlags: ["partial", false, true, true, true, true, true, true]
     },
     {
       id: "uz-dotatsia",
@@ -27,7 +29,9 @@ const DATA = {
       year: "2026",
       sourceLabel: "Розпорядження КМУ №196-р від 02.03.2026; 16 млрд з резервного фонду",
       sourceUrl: "https://www.kmu.gov.ua/npas/pro-vydilennia-koshtiv-z-rezervnoho-fondu-derzhavnoho-biudzhetu-196-020326",
-      notes: "Компенсація різниці між собівартістю та ціною пасажирських квитків. Виділено з резервного фонду."
+      notes: "Компенсація різниці між собівартістю та ціною пасажирських квитків. Виділено з резервного фонду.",
+      populismScore: 4,
+      populismFlags: [false, true, true, true, false, false, true, false]
     },
     {
       id: "epidtrymka",
@@ -37,7 +41,9 @@ const DATA = {
       year: "2026",
       sourceLabel: "Держбюджет-2026: 14.4 млрд грн; КМУ, 13.11.2025",
       sourceUrl: "https://www.kmu.gov.ua/news/kozhen-ukrainets-zmozhe-otrymaty-tysiachu-hryven-u-mezhakh-zymovoi-pidtrymky-rishennia-uriadu",
-      notes: "Бюджетна сума 14.4 млрд (10 млрд на тисячу + 4.4 млрд на 6500)."
+      notes: "Бюджетна сума 14.4 млрд (10 млрд на тисячу + 4.4 млрд на 6500).",
+      populismScore: 6,
+      populismFlags: [true, false, false, true, true, true, true, true]
     },
     {
       id: "shkilne-harchuvannya",
@@ -47,7 +53,9 @@ const DATA = {
       year: "2026",
       sourceLabel: "Держбюджет-2026: 14.4 млрд грн; КМУ, грудень 2025",
       sourceUrl: "https://www.kmu.gov.ua/news/reforma-shkilnoho-kharchuvannia-2-mln-ditei-uzhe-otrymuiut-bezoplatni-hariachi-obidy-derzhava-hotuietsia-do-masshtabuvannia-prohramy",
-      notes: "Частина — прифронтові області (виправдано). Дискусійно: безкоштовно для ВСІХ."
+      notes: "Частина — прифронтові області (виправдано). Дискусійно: безкоштовно для ВСІХ.",
+      populismScore: 2,
+      populismFlags: [true, false, false, "partial", false, false, "partial", false]
     },
     {
       id: "nats-checkup",
@@ -57,7 +65,9 @@ const DATA = {
       year: "2025-2026",
       sourceLabel: "Держбюджет-2026: 10 млрд грн у складі ПМГ (НСЗУ); МОЗ",
       sourceUrl: "https://moz.gov.ua/uk/derzhavnij-byudzhet-na-2026-rik-prijnyato-parlamentom-na-sferu-ohoroni-zdorov-ya-peredbacheno-258-6-mlrd",
-      notes: "10 млрд у складі Програми медичних гарантій (191.6 млрд). Для громадян від 40 років."
+      notes: "10 млрд у складі Програми медичних гарантій (191.6 млрд). Для громадян від 40 років.",
+      populismScore: 3,
+      populismFlags: [true, false, false, "partial", false, true, false, "partial"]
     },
     {
       id: "nats-keshbek",
@@ -67,7 +77,9 @@ const DATA = {
       year: "2026",
       sourceLabel: "КМУ: понад 5.6 млрд грн на підтримку виробників у 2026; резервний фонд",
       sourceUrl: "https://www.kmu.gov.ua/news/uriad-spriamuvav-ponad-56-mlrd-hrn-na-pidtrymku-ukrainskykh-vyrobnykiv-u-2026-rotsi",
-      notes: "Фінансується з резервного фонду. 7.5 млн учасників. Програма завершується у травні 2026."
+      notes: "Фінансується з резервного фонду. 7.5 млн учасників. Програма завершується у травні 2026.",
+      populismScore: 3,
+      populismFlags: [true, false, false, "partial", false, false, true, "partial"]
     },
     {
       id: "keshbek-palne",
@@ -77,7 +89,9 @@ const DATA = {
       year: "2026",
       sourceLabel: "Постанова КМУ №342 від 18.03.2026; ~4 млрд з резервного фонду (оцінка)",
       sourceUrl: "https://epravda.com.ua/power/keshbek-na-palne-yaki-umovi-programi-ta-zvidki-groshi-819377/",
-      notes: "Не закладений у бюджет — фінансується з резервного фонду. Підтверджено виділення 2.14 млрд, очікується ще ~2 млрд."
+      notes: "Не закладений у бюджет — фінансується з резервного фонду. Підтверджено виділення 2.14 млрд, очікується ще ~2 млрд.",
+      populismScore: 8,
+      populismFlags: [true, true, true, true, true, true, true, true]
     }
   ],
   equipment: [
@@ -93,8 +107,8 @@ const DATA = {
     defenseGapUAH: 400000000000,
     defenseGapLabel: "~400 млрд грн — діра по військових видатках",
     defenseGapSourceUrl: "https://lb.ua/economics/2026/03/12/726861_zastupnik_golovi_podatkovogo.html",
-    totalProgramsCostUAH: 83900000000,
-    totalProgramsCostLabel: "~83.9 млрд грн — сума всіх програм у цьому калькуляторі"
+    totalProgramsCostUAH: 53900000000,
+    totalProgramsCostLabel: "~53.9 млрд грн — сума програм у цьому калькуляторі"
   },
   meta: {
     lastUpdated: "2026-03-25",
@@ -104,6 +118,17 @@ const DATA = {
     disclaimer: "Дані є наближеними оцінками для ілюстративних цілей. Реальна вартість може відрізнятися. Деякі програми мають соціальні ефекти — калькулятор показує лише вартісний еквівалент у військовому забезпеченні."
   }
 }
+
+const POPULISM_CRITERIA = [
+  "Універсальна",
+  "Регресивна",
+  "Позабюджетна",
+  "Конкурує з обороною",
+  "Без стратегії згортання",
+  "Передвиборчий тайминг",
+  "Є дешевша альтернатива",
+  "Без оцінки ефективності"
+]
 
 // ============================================================
 // Helpers
@@ -192,6 +217,49 @@ function LiveCounter({ costPerYear, programName }) {
 // ============================================================
 // ProgramSelector
 // ============================================================
+function PopulismBadge({ score, flags }) {
+  const [open, setOpen] = useState(false)
+  if (score < 4) return null
+
+  const isPopulist = score >= 6
+  const scoreLabel = score % 1 === 0 ? `${score}/8` : `${score.toFixed(1)}/8`
+
+  return (
+    <div className="mt-2">
+      <button
+        onClick={e => { e.stopPropagation(); setOpen(!open) }}
+        className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md text-[10px] font-body font-semibold cursor-pointer transition-colors ${
+          isPopulist
+            ? 'bg-red-500/15 text-red-400 hover:bg-red-500/25'
+            : 'bg-yellow-500/15 text-yellow-400 hover:bg-yellow-500/25'
+        }`}
+      >
+        <span>{isPopulist ? '🔴' : '🟡'}</span>
+        <span>{scoreLabel}</span>
+        <span className="opacity-70">·</span>
+        <span>{isPopulist ? 'популістська' : 'дискусійна'}</span>
+        <svg className={`w-2.5 h-2.5 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20">
+          <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+        </svg>
+      </button>
+      {open && (
+        <div className="mt-2 space-y-0.5 text-[11px] font-body animate-[fadeIn_0.2s_ease]">
+          {POPULISM_CRITERIA.map((criterion, i) => {
+            const flag = flags[i]
+            const icon = flag === true ? '✅' : flag === 'partial' ? '⚠️' : '❌'
+            return (
+              <div key={i} className="flex items-center gap-1.5 text-gray-400">
+                <span className="w-4 text-center">{icon}</span>
+                <span>{criterion}</span>
+              </div>
+            )
+          })}
+        </div>
+      )}
+    </div>
+  )
+}
+
 function ProgramSelector({ selected, onSelect }) {
   const isTotal = selected === 'total'
 
@@ -201,12 +269,15 @@ function ProgramSelector({ selected, onSelect }) {
         Оберіть програму
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {DATA.programs.map(p => {
+        {DATA.programs.filter(p => p.populismScore >= 4).map(p => {
           const active = selected === p.id
           return (
-            <button
+            <div
               key={p.id}
+              role="button"
+              tabIndex={0}
               onClick={() => onSelect(p.id)}
+              onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onSelect(p.id) } }}
               className={`group relative text-left px-5 py-4 rounded-xl border transition-all duration-300 cursor-pointer ${
                 active
                   ? 'border-gold-500 bg-gold-500/10 shadow-[0_0_24px_rgba(212,160,23,0.15)]'
@@ -233,10 +304,13 @@ function ProgramSelector({ selected, onSelect }) {
                 )}
               </div>
               <div className="text-xs text-gray-500 mt-1 leading-relaxed">{p.description}</div>
+              {p.populismScore >= 4 && (
+                <PopulismBadge score={p.populismScore} flags={p.populismFlags} />
+              )}
               {active && (
                 <div className="absolute -left-px top-3 bottom-3 w-[3px] rounded-full bg-gold-500" />
               )}
-            </button>
+            </div>
           )
         })}
       </div>
@@ -251,7 +325,7 @@ function ProgramSelector({ selected, onSelect }) {
         <div className={`font-display text-sm font-bold ${isTotal ? 'text-gold-400' : 'text-gold-500/70'}`}>
           УСЬОГО: ₴{formatBillions(DATA.context.totalProgramsCostUAH)}
         </div>
-        <div className="text-xs text-gray-500 mt-1">Сума всіх {DATA.programs.length} програм у цьому калькуляторі</div>
+        <div className="text-xs text-gray-500 mt-1">Сума всіх {DATA.programs.filter(p => p.populismScore >= 4).length} програм у цьому калькуляторі</div>
       </button>
     </section>
   )
@@ -416,7 +490,7 @@ function Footer() {
             <div>
               <div className="text-[10px] uppercase tracking-[0.15em] text-gray-600 mb-2">Джерела програм</div>
               <ul className="space-y-1">
-                {DATA.programs.map(p => (
+                {DATA.programs.filter(p => p.populismScore >= 4).map(p => (
                   <li key={p.id}>
                     <span className="text-gray-400">{p.name}:</span>{' '}
                     {p.sourceUrl ? (
@@ -441,6 +515,20 @@ function Footer() {
                     )}
                   </li>
                 ))}
+              </ul>
+            </div>
+            <div>
+              <div className="text-[10px] uppercase tracking-[0.15em] text-gray-600 mb-2">Індекс популістськості (8 критеріїв)</div>
+              <p className="text-gray-500 mb-2">Кожна програма оцінюється за 8 бінарними критеріями. Програми з балом ≥6 — «популістська», 4–5 — «дискусійна».</p>
+              <ul className="space-y-1">
+                <li><span className="text-gray-400">1. Універсальна</span> — гроші йдуть усім, а не лише вразливим (IMF Working Paper, 2020)</li>
+                <li><span className="text-gray-400">2. Регресивна</span> — багатші отримують більше вигоди (IMF Fiscal Policy & Income Inequality, 2014)</li>
+                <li><span className="text-gray-400">3. Позабюджетна</span> — з резервного фонду, а не закладена в бюджет (Khemani & Wane, World Bank, 2008)</li>
+                <li><span className="text-gray-400">4. Конкурує з обороною</span> — відтягує ресурси від воєнних видатків</li>
+                <li><span className="text-gray-400">5. Без стратегії згортання</span> — немає терміну або механізму згортання (OECD DAC; Dornbusch & Edwards, 1991)</li>
+                <li><span className="text-gray-400">6. Передвиборчий тайминг</span> — запуск у політично вигідний момент (Brender & Drazen, 2005; Nordhaus, 1975)</li>
+                <li><span className="text-gray-400">7. Є дешевша альтернатива</span> — те ж саме можна досягти з меншими витратами</li>
+                <li><span className="text-gray-400">8. Без оцінки ефективності</span> — немає KPI, моніторингу, аудиту результатів (OECD DAC evaluation criteria)</li>
               </ul>
             </div>
             <div className="text-gray-600">
