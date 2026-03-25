@@ -99,7 +99,6 @@ const DATA = {
   meta: {
     lastUpdated: "2026-03-25",
     author: "Валентин Гацко",
-    affiliation: "KSE Center for Sociological Research",
     repoUrl: "https://github.com/velgaks/populism-price",
     methodology: "Вартість програм — бюджетні або офіційно виділені кошти на 2026 рік з держбюджету та резервного фонду. Джерела: КМУ, Мінфін, Економічна правда, РБК-Україна, Слово і Діло, УНІАН. Вартість озброєння — середні оцінки з відкритих джерел (Forbes Ukraine, DronTech, CSIS, волонтерські фонди). Курс — офіційний НБУ на 24.03.2026.",
     disclaimer: "Дані є наближеними оцінками для ілюстративних цілей. Реальна вартість може відрізнятися. Деякі програми мають соціальні ефекти — калькулятор показує лише вартісний еквівалент у військовому забезпеченні."
@@ -453,8 +452,6 @@ function Footer() {
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-600">
           <div>
             <span className="text-gray-400">{DATA.meta.author}</span>
-            <span className="mx-1.5">·</span>
-            <span>{DATA.meta.affiliation}</span>
           </div>
           <div className="flex items-center gap-3">
             <a
