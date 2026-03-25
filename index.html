@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ціна популізму — інтерактивний калькулятор</title>
+    <meta name="description" content="Скільки дронів, снарядів і пікапів можна купити замість державних роздач. Інтерактивний калькулятор вартості популістських програм." />
+    <meta property="og:title" content="Ціна популізму" />
+    <meta property="og:description" content="Скільки дронів, снарядів і пікапів можна купити замість державних роздач" />
+    <meta property="og:type" content="website" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              graphite: { 900: '#0d0d1a', 800: '#141428', 700: '#1a1a35' },
+              gold: { 400: '#f5c542', 500: '#d4a017', 600: '#b8860b' },
+            },
+            fontFamily: {
+              display: ['Unbounded', 'sans-serif'],
+              body: ['Montserrat', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #0d0d1a;
+        color: #f0f0f0;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .font-display { font-family: 'Unbounded', sans-serif; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
