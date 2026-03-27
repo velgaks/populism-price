@@ -230,7 +230,7 @@ function LiveCounter({ costPerYear, programName }) {
 // ============================================================
 function PopulismBadge({ score, flags }) {
   const [open, setOpen] = useState(false)
-  if (score < 4) return null
+  if (score < 3) return null
 
   const isPopulist = score >= 5
   const scoreLabel = score % 1 === 0 ? `${score}/7` : `${score.toFixed(1)}/7`
