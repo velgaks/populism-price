@@ -18,8 +18,8 @@ const DATA = {
       sourceLabel: "Постанова КМУ №341 від 18.03.2026; ~13 млн отримувачів × 1500 грн",
       sourceUrl: "https://zakon.rada.gov.ua/laws/show/341-2026-%D0%BF",
       notes: "Разова виплата. Фінансується з перерозподілу існуючих бюджетних програм. Сума розрахункова (~13 млн × 1500 грн).",
-      populismScore: 6.5,
-      populismFlags: ["partial", false, true, true, true, true, true, true]
+      populismScore: 5.5,
+      populismFlags: ["partial", false, true, true, true, true, true]
     },
     {
       id: "uz-dotatsia",
@@ -31,7 +31,7 @@ const DATA = {
       sourceUrl: "https://www.kmu.gov.ua/npas/pro-vydilennia-koshtiv-z-rezervnoho-fondu-derzhavnoho-biudzhetu-196-020326",
       notes: "Компенсація різниці між собівартістю та ціною пасажирських квитків. Виділено з резервного фонду.",
       populismScore: 4,
-      populismFlags: [false, true, true, true, false, false, true, false]
+      populismFlags: [false, true, true, true, false, true, false]
     },
     {
       id: "epidtrymka",
@@ -42,8 +42,8 @@ const DATA = {
       sourceLabel: "Держбюджет-2026: 14.4 млрд грн; КМУ, 13.11.2025",
       sourceUrl: "https://www.kmu.gov.ua/news/kozhen-ukrainets-zmozhe-otrymaty-tysiachu-hryven-u-mezhakh-zymovoi-pidtrymky-rishennia-uriadu",
       notes: "Бюджетна сума 14.4 млрд (10 млрд на тисячу + 4.4 млрд на 6500).",
-      populismScore: 6,
-      populismFlags: [true, false, false, true, true, true, true, true]
+      populismScore: 5,
+      populismFlags: [true, false, false, true, true, true, true]
     },
     {
       id: "shkilne-harchuvannya",
@@ -55,7 +55,7 @@ const DATA = {
       sourceUrl: "https://www.kmu.gov.ua/news/reforma-shkilnoho-kharchuvannia-2-mln-ditei-uzhe-otrymuiut-bezoplatni-hariachi-obidy-derzhava-hotuietsia-do-masshtabuvannia-prohramy",
       notes: "Частина — прифронтові області (виправдано). Дискусійно: безкоштовно для ВСІХ.",
       populismScore: 2,
-      populismFlags: [true, false, false, "partial", false, false, "partial", false]
+      populismFlags: [true, false, false, "partial", false, "partial", false]
     },
     {
       id: "nats-checkup",
@@ -66,8 +66,8 @@ const DATA = {
       sourceLabel: "Держбюджет-2026: 10 млрд грн у складі ПМГ (НСЗУ); МОЗ",
       sourceUrl: "https://moz.gov.ua/uk/derzhavnij-byudzhet-na-2026-rik-prijnyato-parlamentom-na-sferu-ohoroni-zdorov-ya-peredbacheno-258-6-mlrd",
       notes: "10 млрд у складі Програми медичних гарантій (191.6 млрд). Для громадян від 40 років.",
-      populismScore: 3,
-      populismFlags: [true, false, false, "partial", false, true, false, "partial"]
+      populismScore: 2,
+      populismFlags: [true, false, false, "partial", false, false, "partial"]
     },
     {
       id: "nats-keshbek",
@@ -79,7 +79,7 @@ const DATA = {
       sourceUrl: "https://www.kmu.gov.ua/news/uriad-spriamuvav-ponad-56-mlrd-hrn-na-pidtrymku-ukrainskykh-vyrobnykiv-u-2026-rotsi",
       notes: "Фінансується з резервного фонду. 7.5 млн учасників. Програма завершується у травні 2026.",
       populismScore: 3,
-      populismFlags: [true, false, false, "partial", false, false, true, "partial"]
+      populismFlags: [true, false, false, "partial", false, true, "partial"]
     },
     {
       id: "1000-godyn-kontentu",
@@ -87,11 +87,11 @@ const DATA = {
       description: "Створення 1000 годин українського культурного контенту (фільми, серіали, анімація, музика)",
       annualCostUAH: 4000000000,
       year: "2026",
-      sourceLabel: "Держбюджет-2026: 4 млрд грн, окрема програма Мінкульту; КМУ, березень 2026",
-      sourceUrl: "https://detector.media/infospace/article/248612/2026-03-26-u-kvitni-minkult-zapuskaie-initsiatyvu-prezydenta-pro-1000-godyn-ukrainskogo-kontentu/",
-      notes: "Ініціатива Президента. Стрибок у 10 разів (405 млн у 2025 → 4 млрд у 2026). Обходить Держкіно та Укркультфонд. Мінфін не пояснив чому. Жодних KPI.",
-      populismScore: 6,
-      populismFlags: [true, false, false, true, true, true, true, true]
+      sourceLabel: "Держбюджет-2026 (Закон №4695-IX, КПКВК 3801030): 4 млрд грн; Постанова КМУ від 26.03.2026",
+      sourceUrl: "https://www.kmu.gov.ua/news/uriad-zatverdyv-initsiatyvu-pidtrymky-ukrainskoho-kulturnoho-produktu-start-podachi-zaiavok-vzhe-u-kvitni",
+      notes: "Ініціатива Президента. Стрибок у 10 разів (405 млн у 2025 → 4 млрд у 2026). Кошти через Держкіно, УКФ, Інститут книги. KPI задекларовані, але в бюджетному запиті пояснення «відсутні».",
+      populismScore: 3.5,
+      populismFlags: [true, false, false, true, true, false, "partial"]
     },
     {
       id: "keshbek-palne",
@@ -102,8 +102,8 @@ const DATA = {
       sourceLabel: "Постанова КМУ №342 від 18.03.2026; ~4 млрд з резервного фонду (оцінка)",
       sourceUrl: "https://epravda.com.ua/power/keshbek-na-palne-yaki-umovi-programi-ta-zvidki-groshi-819377/",
       notes: "Не закладений у бюджет — фінансується з резервного фонду. Підтверджено виділення 2.14 млрд, очікується ще ~2 млрд.",
-      populismScore: 8,
-      populismFlags: [true, true, true, true, true, true, true, true]
+      populismScore: 7,
+      populismFlags: [true, true, true, true, true, true, true]
     }
   ],
   equipment: [
@@ -119,8 +119,8 @@ const DATA = {
     defenseGapUAH: 400000000000,
     defenseGapLabel: "~400 млрд грн — діра по військових видатках",
     defenseGapSourceUrl: "https://lb.ua/economics/2026/03/12/726861_zastupnik_golovi_podatkovogo.html",
-    totalProgramsCostUAH: 57900000000,
-    totalProgramsCostLabel: "~57.9 млрд грн — сума програм у цьому калькуляторі"
+    totalProgramsCostUAH: 63500000000,
+    totalProgramsCostLabel: "~63.5 млрд грн — сума програм у цьому калькуляторі"
   },
   meta: {
     lastUpdated: "2026-03-27",
@@ -137,7 +137,6 @@ const POPULISM_CRITERIA = [
   "Позабюджетна",
   "Конкурує з обороною",
   "Без стратегії згортання",
-  "Передвиборчий тайминг",
   "Є дешевша альтернатива",
   "Без оцінки ефективності"
 ]
@@ -233,8 +232,8 @@ function PopulismBadge({ score, flags }) {
   const [open, setOpen] = useState(false)
   if (score < 4) return null
 
-  const isPopulist = score >= 6
-  const scoreLabel = score % 1 === 0 ? `${score}/8` : `${score.toFixed(1)}/8`
+  const isPopulist = score >= 5
+  const scoreLabel = score % 1 === 0 ? `${score}/7` : `${score.toFixed(1)}/7`
 
   return (
     <div className="mt-2">
@@ -281,7 +280,7 @@ function ProgramSelector({ selected, onSelect }) {
         Оберіть програму
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {DATA.programs.filter(p => p.populismScore >= 4).map(p => {
+        {DATA.programs.filter(p => p.populismScore >= 3).map(p => {
           const active = selected === p.id
           return (
             <div
@@ -316,7 +315,7 @@ function ProgramSelector({ selected, onSelect }) {
                 )}
               </div>
               <div className="text-xs text-gray-500 mt-1 leading-relaxed">{p.description}</div>
-              {p.populismScore >= 4 && (
+              {p.populismScore >= 3 && (
                 <PopulismBadge score={p.populismScore} flags={p.populismFlags} />
               )}
               {active && (
@@ -337,7 +336,7 @@ function ProgramSelector({ selected, onSelect }) {
         <div className={`font-display text-sm font-bold ${isTotal ? 'text-gold-400' : 'text-gold-500/70'}`}>
           УСЬОГО: ₴{formatBillions(DATA.context.totalProgramsCostUAH)}
         </div>
-        <div className="text-xs text-gray-500 mt-1">Сума всіх {DATA.programs.filter(p => p.populismScore >= 4).length} програм у цьому калькуляторі</div>
+        <div className="text-xs text-gray-500 mt-1">Сума всіх {DATA.programs.filter(p => p.populismScore >= 3).length} програм у цьому калькуляторі</div>
       </button>
     </section>
   )
@@ -502,7 +501,7 @@ function Footer() {
             <div>
               <div className="text-[10px] uppercase tracking-[0.15em] text-gray-600 mb-2">Джерела програм</div>
               <ul className="space-y-1">
-                {DATA.programs.filter(p => p.populismScore >= 4).map(p => (
+                {DATA.programs.filter(p => p.populismScore >= 3).map(p => (
                   <li key={p.id}>
                     <span className="text-gray-400">{p.name}:</span>{' '}
                     {p.sourceUrl ? (
