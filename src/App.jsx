@@ -82,6 +82,18 @@ const DATA = {
       populismFlags: [true, false, false, "partial", false, false, true, "partial"]
     },
     {
+      id: "1000-godyn-kontentu",
+      name: "«1000 годин контенту»",
+      description: "Створення 1000 годин українського культурного контенту (фільми, серіали, анімація, музика)",
+      annualCostUAH: 4000000000,
+      year: "2026",
+      sourceLabel: "Держбюджет-2026: 4 млрд грн, окрема програма Мінкульту; КМУ, березень 2026",
+      sourceUrl: "https://detector.media/infospace/article/248612/2026-03-26-u-kvitni-minkult-zapuskaie-initsiatyvu-prezydenta-pro-1000-godyn-ukrainskogo-kontentu/",
+      notes: "Ініціатива Президента. Стрибок у 10 разів (405 млн у 2025 → 4 млрд у 2026). Обходить Держкіно та Укркультфонд. Мінфін не пояснив чому. Жодних KPI.",
+      populismScore: 6,
+      populismFlags: [true, false, false, true, true, true, true, true]
+    },
+    {
       id: "keshbek-palne",
       name: "Кешбек на пальне",
       description: "Повернення 5-15% вартості заправки. Діє 20.03 — 01.05.2026",
@@ -107,11 +119,11 @@ const DATA = {
     defenseGapUAH: 400000000000,
     defenseGapLabel: "~400 млрд грн — діра по військових видатках",
     defenseGapSourceUrl: "https://lb.ua/economics/2026/03/12/726861_zastupnik_golovi_podatkovogo.html",
-    totalProgramsCostUAH: 53900000000,
-    totalProgramsCostLabel: "~53.9 млрд грн — сума програм у цьому калькуляторі"
+    totalProgramsCostUAH: 57900000000,
+    totalProgramsCostLabel: "~57.9 млрд грн — сума програм у цьому калькуляторі"
   },
   meta: {
-    lastUpdated: "2026-03-25",
+    lastUpdated: "2026-03-27",
     author: "Валентин Гацко",
     repoUrl: "https://github.com/velgaks/populism-price",
     methodology: "Вартість програм — бюджетні або офіційно виділені кошти на 2026 рік з держбюджету та резервного фонду. Джерела: КМУ, Мінфін, Економічна правда, РБК-Україна, Слово і Діло, УНІАН. Вартість озброєння — середні оцінки з відкритих джерел (Forbes Ukraine, DronTech, CSIS, волонтерські фонди). Курс — офіційний НБУ на 24.03.2026.",
